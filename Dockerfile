@@ -1,3 +1,4 @@
 FROM rcmachado/changelog:latest
-WORKDIR /app
-ENTRYPOINT ["/changelog"]
+WORKDIR /github/workspace
+COPY entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]
