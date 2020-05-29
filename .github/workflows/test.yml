@@ -7,7 +7,7 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Hello world action step
+      - name: Run changelog init
         uses: ./
         id: init
         # imagem rcmachado/changelog precisa ter um work dir
