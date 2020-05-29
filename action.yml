@@ -1,0 +1,18 @@
+name: "Changelog"
+author: "Rodrigo Machado"
+description: Ensure changelog
+
+branding:
+  icon: "file-text"
+  color: "green"
+
+inputs:
+  args:
+    description: Pass arguments to changelog command
+    required: true
+
+runs:
+  using: "docker"
+  image: "docker://rcmachado/changelog:latest"
+  args:
+    - ${{ inputs.args }}
