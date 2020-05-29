@@ -10,5 +10,11 @@ jobs:
       - name: Hello world action step
         uses: ./
         id: init
+        # imagem rcmachado/changelog precisa ter um work dir
+        # do contrário o entrypoint não funciona
+        # ou então usar um wrapper entrypoint.sh para passar
+        # os params para o changelog - assim controlamos melhor
+        #
+        # valeria ter os comandos separados na action?
         with:
           args: init --output CHANGELOG.md --compare-url https://example.com/abcdef...HEAD

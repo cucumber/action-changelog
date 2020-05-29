@@ -13,6 +13,7 @@ inputs:
 
 runs:
   using: "docker"
-  image: "docker://rcmachado/changelog:latest"
+  # image: "docker://rcmachado/changelog:latest"
+  image: Dockerfile
   args:
     - ${{ inputs.args }}
