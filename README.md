@@ -12,9 +12,11 @@ This action runs `changelog` binary from `rcmachado/changelog` image.
 
 ## Example usage
 
+```yaml
 uses: rcmachado/changelog-action@v1
 with:
   args: fmt
+```
 
 ## License
 
