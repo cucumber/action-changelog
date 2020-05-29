@@ -13,3 +13,7 @@ This action runs `changelog` binary from `rcmachado/changelog` image.
 uses: rcmachado/changelog-action@v1
 with:
   args: fmt
+
+## License
+
+This work is licensed under MIT. See [LICENSE](./LICENSE) for details.
