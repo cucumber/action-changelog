@@ -2,6 +2,8 @@
 
 This action runs `changelog` binary from `rcmachado/changelog` image.
 
+@rcmachado/changelog generate and manipulate `CHANGELOG.md` files that follow the https://keepachangelog.com format.
+
 ## Inputs
 
 ### args
