@@ -1,6 +1,6 @@
-name: "Changelog"
+name: "Changelog Tool"
 author: "Rodrigo Machado"
-description: Ensure changelog
+description: "Manipulate changelog files that follows keepachangelog.com format."
 
 branding:
   icon: "file-text"
