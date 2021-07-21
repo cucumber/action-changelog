@@ -11,6 +11,10 @@ inputs:
     description: Pass arguments to changelog command
     required: true
 
+outputs:
+  output:
+    description: The output from the changelog command
+
 runs:
   using: "docker"
   image: Dockerfile
