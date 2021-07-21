@@ -1,4 +1,4 @@
 #!/bin/sh
 
-output=$(/changelog $@)
+output=$(changelog $@)
 echo "::set-output name=output::$output"
