@@ -14,3 +14,8 @@ jobs:
         id: init
         with:
           args: init --output CHANGELOG.md --compare-url https://example.com/abcdef...HEAD
+      - name: Run changelog release
+        uses: ./
+        id: release
+        with:
+          args: release --output CHANGELOG.md 1.0.0
