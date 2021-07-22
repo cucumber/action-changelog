@@ -1,9 +1,9 @@
 on: [push]
 
 jobs:
-  init:
+  test-commands:
     runs-on: ubuntu-latest
-    name: init
+    name: test commands
     steps:
       - name: Checkout
         uses: actions/checkout@v2
@@ -19,3 +19,8 @@ jobs:
         id: release
         with:
           args: release --output CHANGELOG.md 1.0.0
+      - name: Run changelog latest
+        uses: ./
+        id: latest
+        with:
+          args: latest
