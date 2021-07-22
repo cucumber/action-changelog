@@ -24,3 +24,4 @@ jobs:
         id: latest
         with:
           args: latest
+      - run: echo ${{ steps.latest.outputs.output }}
