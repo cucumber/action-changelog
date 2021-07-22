@@ -10,6 +10,12 @@ This action runs `changelog` binary from `rcmachado/changelog` image.
 
 **Required** The arguments to pass to `changelog` binary.
 
+## Outputs
+
+### output
+
+The output from the changelog command
+
 ## Example usage
 
 ```yaml
