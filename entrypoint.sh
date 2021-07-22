@@ -1,3 +1,4 @@
 #!/bin/sh
 
-changelog $@
+output = $(changelog $@)
+echo $output
