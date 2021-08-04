@@ -24,4 +24,10 @@ jobs:
         id: latest
         with:
           args: latest
-      - run: echo ${{ steps.latest.outputs.output }}
+      - run: echo ${{ steps.latest.outputs.result }}
+      - name: Run changelog show
+        uses: ./
+        id: show
+        with:
+          args: show 0.1.0
+      - run: echo ${{ steps.show.outputs.result }}

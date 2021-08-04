@@ -24,6 +24,8 @@ with:
   args: fmt
 ```
 
+The output will be in the step's `result` output.
+
 ## License
 
 This work is licensed under MIT. See [LICENSE](./LICENSE) for details.
