@@ -12,7 +12,7 @@ This action runs `changelog` binary from `rcmachado/changelog` image.
 
 ## Outputs
 
-### output
+### result
 
 The output from the changelog command
 
