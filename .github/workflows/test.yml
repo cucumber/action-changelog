@@ -30,4 +30,4 @@ jobs:
         id: show
         with:
           args: show 0.1.0
-      - run: echo ${{ steps.show.outputs.result }}
+      - run: echo "${{ steps.show.outputs.result }}"
