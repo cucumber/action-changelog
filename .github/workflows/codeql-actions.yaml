@@ -1,4 +1,4 @@
-name: codeql-javascript
+name: codeql-actions
 
 permissions: { }
 
