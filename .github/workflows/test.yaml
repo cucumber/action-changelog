@@ -18,17 +18,17 @@ jobs:
       - name: Create dummy changelog file
         run: touch CHANGELOG.md
       - name: Run changelog init
-        uses: ./
+        uses: $/
         id: init
         with:
           args: init --output CHANGELOG.md --compare-url https://example.com/abcdef...HEAD
       - name: Run changelog release
-        uses: ./
+        uses: $/
         id: release
         with:
           args: release --output CHANGELOG.md 1.0.0
       - name: Run changelog latest
-        uses: ./
+        uses: $/
         id: latest
         with:
           args: latest
@@ -36,7 +36,7 @@ jobs:
         env:
           RESULT: ${{ steps.latest.outputs.result }}
       - name: Run changelog show
-        uses: ./
+        uses: $/
         id: show
         with:
           args: show 0.1.0
